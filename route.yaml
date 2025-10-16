@@ -1,0 +1,8 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: hello-python
+spec:
+  to: { kind: Service, name: hello-python }
+  port: { targetPort: http }
+  path: /
