@@ -13,5 +13,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: image-registry.openshift-image-registry.svc:5000/cicd/hello-python:LATEST_IMAGE_TAG # ĐÃ CHỈNH SỬA
+        image: image-registry.openshift-image-registry.svc:5000/hello-dev/hello-python:LATEST_IMAGE_TAG # ĐÃ CHỈNH SỬA
         ports: [ { containerPort: 8080 } ]
+
